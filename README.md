@@ -1,1 +1,1 @@
-# Module-2-Linear-Regression
+# Module 2 Linear Regression
