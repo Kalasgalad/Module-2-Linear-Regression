@@ -50,6 +50,8 @@ The target variable for all modelling is the price since that is the prediction 
 
 - The third and final model I chose to use was ElasticNetCV due to its ability to stabilize large datasets, such as this rental market. Ultimately, this model did not outperform the Polynomial Regression, but it came close.
 
+## Conlcusion and Final Model Prediction
+
 *Final Model*
 
 I chose to predict outcomes of select features for price with the polynomila regression model. The table I created in the final portions of the notebook reflect that this model best fit the dataset. It is not overfitting the data, but the values are all quite low.
