@@ -24,35 +24,35 @@ In this project, I will be comparing a Linear Regression Model, a Simple Polynom
   - The completed .ipynb notebook with your analysis.
 - Your notebook has to be organized and clean. Break down your steps, and follow coding best practices.
 
-*Exploratory Data Analysis (EDA)*
+**Exploratory Data Analysis (EDA)**
 
 Performed EDA to understand dataset distribution, trends, and relationships. Used a few visualizations to detect key trends.
 
 Identified missing values, outliers, and categorical/numerical feature distributions. In different cases, adjusted missing values by filling with mode, mean or dropping unnecessary values.
 
-*Feature Engineering*
+**Feature Engineering**
  
 Encoded selected columns to numerical values from object, and selected features among them to use for regression modelling.
 
-*Regresion Modelling*
+**Regresion Modelling**
 
 The target variable for all modelling is the price since that is the prediction intended. Using a test size of 15%, 85% for training.
 
-**1st Model: Linear Regression**
+*1st Model: Linear Regression*
 
 - The first model is scaled using StandardScaler. The validation values are all quite high, specifically MSE.
 
-**2nd Model: Polynomial Regression**
+*2nd Model: Polynomial Regression*
 
 - The second model is scaled as well using StandardSCaler. The validation values are more reliable than the previous linear regression model. R2 score is improved from the first; confidence rises with this model predicting prices.
 
-**3rd Model: ElasticNetCV Polynomial Regression**
+*3rd Model: ElasticNetCV Polynomial Regression*
 
 - The third and final model I chose to use was ElasticNetCV due to its ability to stabilize large datasets, such as this rental market. Ultimately, this model did not outperform the Polynomial Regression, but it came close.
 
 ## Conlcusion and Final Model Prediction
 
-*Final Model*
+**Final Model**
 
 I chose to predict outcomes of select features for price with the polynomila regression model. The table I created in the final portions of the notebook reflect that this model best fit the dataset. It is not overfitting the data, but the values are all quite low.
 The input selection I chose is to predict price according to a unit with 2 baths (coefficient 572.104667) and 1200 square feet (coefficient 0.859046). The model predicted that a unit of this make would be equivalent to 3453$ +- 711$ depending on location in Canada.
