@@ -54,5 +54,5 @@ The target variable for all modelling is the price since that is the prediction 
 
 **Final Model**
 
-I chose to predict outcomes of select features for price with the polynomila regression model. The table I created in the final portions of the notebook reflect that this model best fit the dataset. It is not overfitting the data, but the values are all quite low.
-The input selection I chose is to predict price according to a unit with 2 baths (coefficient 572.104667) and 1200 square feet (coefficient 0.859046). The model predicted that a unit of this make would be equivalent to 3453$ +- 711$ depending on location in Canada.
+I chose to predict outcomes of select features for price with the polynomial regression model using ElasticNet CV. The table I created in the final portions of the notebook reflect that this model best fit the dataset. It is not overfitting the data, and the error values are all quite low with R2 score being the highest among the three. <br>
+The input I chose generated a final predicted price of $2288.55 for a listing priced at 2680 which shows quite a lot of variance.
